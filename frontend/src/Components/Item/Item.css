@@ -1,0 +1,62 @@
+/* Item Component Styles */
+
+.item {
+  text-align: center;
+  margin-bottom: 30px; /* Adjust margin between items */
+}
+
+.item img {
+  max-width: 100%; /* Ensure images resize appropriately */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Add smooth hover effect */
+}
+
+.item img:hover {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+.item p {
+  margin-top: 10px; /* Space between image and name */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-prices {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Space between name and prices */
+}
+
+.item-price-new {
+  color: #ff4141; /* New price color */
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px; /* Space between prices */
+}
+
+.item-price-old {
+  color: #999; /* Old price color */
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+
+  .item-price-new {
+    font-size: 18px;
+  }
+
+  .item-price-old {
+    font-size: 14px;
+  }
+}

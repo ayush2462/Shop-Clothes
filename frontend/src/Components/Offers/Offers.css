@@ -1,0 +1,82 @@
+/* Offers Component Styles */
+
+.offers {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 80px 20px; /* Padding around the content */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a suitable font */
+}
+
+.offers-left {
+  flex: 1; /* Take up 50% of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.offers-left h1 {
+  font-size: 36px; /* Heading size */
+  font-weight: 700; /* Heading weight */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.offers-left p {
+  font-size: 18px; /* Paragraph size */
+  color: #666; /* Paragraph color */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+.offers-left button {
+  padding: 12px 30px; /* Button padding */
+  background-color: #ff4141; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Button font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.offers-left button:hover {
+  background-color: #e03636; /* Darker background color on hover */
+}
+
+.offers-right {
+  flex: 1; /* Take up 50% of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img {
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    padding: 60px 20px; /* Adjust padding */
+  }
+
+  .offers-left {
+    margin-bottom: 40px; /* Space below the left content */
+  }
+
+  .offers-left h1 {
+    font-size: 28px; /* Decrease heading size */
+  }
+
+  .offers-left p {
+    font-size: 16px; /* Decrease paragraph size */
+  }
+
+  .offers-left button {
+    padding: 10px 24px; /* Adjust button padding */
+    font-size: 16px; /* Decrease button font size */
+  }
+}

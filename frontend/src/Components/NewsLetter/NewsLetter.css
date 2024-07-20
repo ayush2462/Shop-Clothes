@@ -1,0 +1,79 @@
+/* NewsLetter Component Styles */
+
+.newsletter {
+  padding: 40px 20px; /* Padding around the content */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a suitable font */
+  text-align: center; /* Center align text */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.newsletter h1 {
+  font-size: 28px; /* Heading size */
+  font-weight: 600; /* Heading weight */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.newsletter p {
+  font-size: 16px; /* Paragraph size */
+  color: #666; /* Paragraph color */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  max-width: 300px; /* Limit input width */
+  padding: 12px; /* Input padding */
+  border: 1px solid #ccc; /* Input border */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 16px; /* Input font size */
+  outline: none; /* Remove outline on focus */
+}
+
+.newsletter button {
+  padding: 12px 20px; /* Button padding */
+  background-color: #ff4141; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.newsletter button:hover {
+  background-color: #e03636; /* Darker background color on hover */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 30px 10px; /* Adjust padding */
+  }
+
+  .newsletter h1 {
+    font-size: 24px; /* Decrease heading size */
+  }
+
+  .newsletter p {
+    font-size: 14px; /* Decrease paragraph size */
+  }
+
+  .newsletter input[type="email"] {
+    font-size: 14px; /* Decrease input font size */
+  }
+
+  .newsletter button {
+    padding: 10px 16px; /* Adjust button padding */
+    font-size: 14px; /* Decrease button font size */
+  }
+}

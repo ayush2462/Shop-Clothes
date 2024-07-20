@@ -1,0 +1,147 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 40px; /* Adjust height as needed */
+  margin-right: 10px;
+}
+
+.nav-logo p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff4500; /* Adjust hover color as needed */
+}
+
+.nav-menu .active {
+  border-bottom: 2px solid #ff4500; /* Active menu item indicator */
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+}
+
+.nav-login-cart button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background-color: #e63946; /* Darker shade of primary color on hover */
+}
+
+.nav-login-cart img {
+  height: 30px; /* Adjust height as needed */
+  margin-right: 10px;
+}
+
+.nav-cart-count {
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  position: relative;
+  top: -10px;
+  right: -10px;
+}
+
+/* Dropdown menu for smaller devices */
+
+.nav-dropdown-icon {
+  display: none; /* Hide dropdown icon by default */
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide menu items by default on smaller devices */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav-menu.visible {
+    display: flex; /* Show menu when visible class is applied */
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Optional: Add divider between menu items */
+  }
+
+  .nav-login-cart {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Optional: Adjust spacing */
+  }
+
+  .nav-dropdown-icon {
+    display: block; /* Show dropdown icon on smaller devices */
+    height: 30px; /* Adjust height as needed */
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+
+  .nav-cart-count {
+    top: 0; /* Adjust position for cart count */
+    right: 0;
+  }
+}

@@ -1,0 +1,51 @@
+/* Breadcrums Styles */
+
+.breadcrums {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #5e5e5e;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.breadcrums img {
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+}
+
+.breadcrums span {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .breadcrums {
+    font-size: 12px;
+  }
+
+  .breadcrums img {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcrums {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+
+  .breadcrums img {
+    width: 8px;
+    height: 8px;
+    margin: 0 6px;
+  }
+}

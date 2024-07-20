@@ -1,0 +1,49 @@
+/* Related Products Component Styles */
+
+.relatedproducts {
+  width: 100%;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.relatedproducts h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.relatedproducts hr {
+  border: 0;
+  height: 1px;
+  background: #e1e1e1;
+  margin-bottom: 20px;
+}
+
+.relatedproducts-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .relatedproducts {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .relatedproducts h1 {
+    font-size: 22px;
+  }
+
+  .relatedproducts-item {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}

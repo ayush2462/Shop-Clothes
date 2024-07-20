@@ -1,0 +1,201 @@
+/* ProductDisplay Component Styles */
+
+.productdisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productdisplay-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.productdisplay-img-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.productdisplay-img-list img {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.productdisplay-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.productdisplay-right {
+  flex: 1;
+}
+
+.productdisplay-right h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-star {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-star img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.productdisplay-right-star p {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.productdisplay-right-prices {
+  margin-bottom: 15px;
+}
+
+.productdisplay-right-price-old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.productdisplay-right-price-new {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.productdisplay-right-description {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.productdisplay-right-size {
+  margin-bottom: 20px;
+}
+
+.productdisplay-right-size h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-size-list {
+  display: flex;
+  gap: 10px;
+}
+
+.productdisplay-right-size-list div {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.productdisplay-right-size-list div:hover {
+  background-color: #f0f0f0;
+}
+
+.productdisplay-right button {
+  background-color: #ff4141;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.productdisplay-right button:hover {
+  background-color: #e63946;
+}
+
+.productdisplay-right-category {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.productdisplay-right-category span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .productdisplay {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .productdisplay-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .productdisplay-img-list {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .productdisplay-img-list img {
+    width: 100px;
+    height: auto;
+  }
+
+  .productdisplay-right h1 {
+    font-size: 24px;
+  }
+
+  .productdisplay-right-star img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .productdisplay-right-star p {
+    font-size: 12px;
+  }
+
+  .productdisplay-right-price-old {
+    font-size: 16px;
+  }
+
+  .productdisplay-right-price-new {
+    font-size: 20px;
+  }
+
+  .productdisplay-right-description {
+    font-size: 14px;
+  }
+
+  .productdisplay-right-size h1 {
+    font-size: 16px;
+  }
+
+  .productdisplay-right-size-list div {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .productdisplay-right button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .productdisplay-right-category {
+    font-size: 14px;
+  }
+}

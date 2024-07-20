@@ -1,0 +1,114 @@
+/* Footer Component Styles */
+
+.footer {
+  padding: 40px 20px; /* Padding around the content */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a suitable font */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space below logo */
+}
+
+.footer-logo img {
+  width: 50px; /* Logo image width */
+  margin-right: 10px; /* Space between logo image and text */
+}
+
+.footer-logo p {
+  font-size: 24px; /* Logo text size */
+  font-weight: 700; /* Logo text weight */
+}
+
+.footer-links {
+  list-style-type: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align list items horizontally */
+}
+
+.footer-links li {
+  margin-right: 20px; /* Space between list items */
+  font-size: 18px; /* List item text size */
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 20px; /* Space between social icons */
+  margin-top: 20px; /* Space above social icons */
+  justify-content: center; /* Center align social icons horizontally */
+}
+
+.footer-icons-container img {
+  width: 30px; /* Social icon size */
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Space above copyright text */
+  text-align: center; /* Center align text */
+}
+
+.footer-copyright hr {
+  border-color: #555; /* Border color */
+  width: 100%;
+  margin-bottom: 10px; /* Space below hr */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-logo p {
+    font-size: 20px;
+  }
+
+  .footer-links li {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .footer-social-icon {
+    margin-top: 15px;
+  }
+
+  .footer-icons-container img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-logo p {
+    font-size: 18px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-social-icon {
+    margin-top: 10px;
+  }
+
+  .footer-icons-container img {
+    width: 20px;
+  }
+}
